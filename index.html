@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>c0de residency — Talento senior y re-entry para tu equipo</title>
+  <meta name="description" content="Conecta desarrolladores con experiencia transversal y re-entry con empresas que valoran el talento real. Formación, mentoring y un funnel de contratación sin sesgos." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tipografías: Inter (slashed zero) y Source Sans 3 como fallback -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      color-scheme: dark light;
+    }
+    html, body {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Source Sans 3', sans-serif;
+      /* activa zero tachado en fuentes compatibles */
+      font-feature-settings: "zero" 1, "tnum" 1, "ss01" 1;
+    }
+    /* mejora focus */
+    :focus-visible { outline: 3px solid #14b8a6; outline-offset: 2px; }
+  </style>
+</head>
+<body class="bg-neutral-950 text-neutral-100">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/70">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between py-4">
+        <nav class="hidden md:flex items-center gap-8 text-sm">
+          <a href="#casos" class="hover:text-teal-300">A quién ayudamos</a>
+          <a href="#como-funciona" class="hover:text-teal-300">Cómo funciona</a>
+          <a href="#evidencias" class="hover:text-teal-300">Historias</a>
+          <a href="#faq" class="hover:text-teal-300">FAQ</a>
+          <a href="#contacto" class="inline-flex items-center rounded-xl bg-teal-500 px-4 py-2 font-semibold text-neutral-900 hover:bg-teal-400">Quiero participar</a>
+        </nav>
+        <a href="#contacto" class="md:hidden inline-flex items-center rounded-xl bg-teal-500 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-teal-400">Contactar</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="relative isolate">
+    <div class="absolute inset-0 -z-10">
+      <!-- Imagen de fondo que proporcionaste -->
+      <img
+        src="https://img.freepik.com/foto-gratis/tiro-angulo-edificio-moderno-creativo-destacados-giros-arquitectonicos_181624-9145.jpg?t=st=1762715386~exp=1762718986~hmac=c6cc1750dea1e9fb45c607f07c12426afee87818b690b0a099c1e7543b964568&w=2000"
+        alt="Fondo arquitectónico moderno"
+        class="h-full w-full object-cover opacity-30"
+        loading="eager"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-neutral-900/60 via-neutral-950/80 to-neutral-950"></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-24 sm:pt-28 sm:pb-32">
+      <div class="grid items-center gap-10 lg:grid-cols-12">
+        <div class="lg:col-span-7">
+          <img src="logo_c0de_dark.png" alt="c0de residency" class="h-40 w-auto mb-8" />
+          <div class="inline-flex items-center gap-2 rounded-full bg-neutral-900/60 ring-1 ring-neutral-700 px-3 py-1 text-xs text-neutral-300">
+            <span>AI T.H.I.N.K · IMPLEMENT</span>
+            <span class="h-1 w-1 rounded-full bg-teal-400"></span>
+            <span>En desarrollo</span>
+          </div>
+          <h1 class="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
+            Talento senior y re-entry listo para <span class="text-teal-400">shippear</span> desde el día cero.
+          </h1>
+          <p class="mt-6 text-lg sm:text-xl text-neutral-300 max-w-2xl">
+            Conectamos desarrolladores que vuelven tras un paréntesis, perfiles que migran desde tecnologías “legacy”
+            y juniors +45 con empresas que valoran el impacto por encima del prejuicio.
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-3">
+            <a href="#contacto" class="inline-flex items-center justify-center rounded-xl bg-teal-500 px-6 py-3 font-semibold text-neutral-900 hover:bg-teal-400">
+              Solicitar acceso
+            </a>
+            <a href="#como-funciona" class="inline-flex items-center justify-center rounded-xl ring-1 ring-neutral-700 px-6 py-3 font-semibold hover:bg-neutral-900/40">
+              Ver cómo funciona
+            </a>
+          </div>
+          <p class="mt-4 text-sm text-neutral-400">Email de contacto: <a href="mailto:info@c0deresidency.com" class="underline decoration-teal-500/60 hover:text-teal-300">info@c0deresidency.com</a></p>
+        </div>
+
+        <div class="lg:col-span-5">
+          <!-- Tarjeta resumen rápida -->
+          <div class="rounded-2xl bg-neutral-900/60 ring-1 ring-neutral-700 p-6">
+            <h2 class="text-xl font-semibold">¿Por qué c0de residency?</h2>
+            <ul class="mt-4 space-y-3 text-neutral-300">
+              <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-teal-400"></span><span>Evaluación de habilidades práctica y sin sesgos de edad.</span></li>
+              <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-teal-400"></span><span>Mentoring express para cerrar “gaps” actuales (cloud, testing, CI/CD).</span></li>
+              <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-teal-400"></span><span>Funnel de contratación end-to-end: descubrimiento → prueba técnica → onboarding acompañada.</span></li>
+            </ul>
+            <a href="#contacto" class="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-teal-500 px-5 py-3 font-semibold text-neutral-900 hover:bg-teal-400">Quiero incorporar talento</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- A QUIÉN AYUDAMOS -->
+  <section id="casos" class="py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold">A quién ayudamos</h2>
+      <p class="mt-3 text-neutral-300 max-w-3xl">Perfiles con experiencia real que a menudo quedan fuera por sesgos o por el cambio de stack. Nosotros les damos contexto, actualización y un camino de entrada directo.</p>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <article class="rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800 p-6">
+          <h3 class="font-semibold">Re-entry tras paréntesis</h3>
+          <p class="mt-2 text-neutral-300">Desarrolladores que vuelven después de varios años. Actualizamos prácticas: Git moderno, testing, cloud y despliegue.</p>
+        </article>
+        <article class="rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800 p-6">
+          <h3 class="font-semibold">Cambio de stack “legacy” → actual</h3>
+          <p class="mt-2 text-neutral-300">De on-prem y monolitos a microservicios, contenedores y pipelines CI/CD.</p>
+        </article>
+        <article class="rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800 p-6">
+          <h3 class="font-semibold">Juniors +45</h3>
+          <p class="mt-2 text-neutral-300">Mucho bagaje técnico y soft skills. Les falta vuelo en el stack moderno: lo cubrimos con proyectos guiados y katas.</p>
+        </article>
+        <article class="rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800 p-6">
+          <h3 class="font-semibold">Returners desde otros roles IT</h3>
+          <p class="mt-2 text-neutral-300">QA, SysAdmin, Data, Product… que saltan a desarrollo con base sólida y una rampa realista.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section id="como-funciona" class="py-20 bg-neutral-900/40">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-2 items-center">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-bold">Cómo funciona</h2>
+          <ol class="mt-6 space-y-5">
+            <li class="flex gap-4">
+              <span class="flex h-9 w-9 items-center justify-center rounded-full bg-teal-500 font-bold text-neutral-900">1</span>
+              <div>
+                <h3 class="font-semibold">Assessment sin sesgos</h3>
+                <p class="text-neutral-300">Prueba técnica práctica (kata + pair programming) y mapa de habilidades.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex h-9 w-9 items-center justify-center rounded-full bg-teal-500 font-bold text-neutral-900">2</span>
+              <div>
+                <h3 class="font-semibold">Mentoring orientado a impacto</h3>
+                <p class="text-neutral-300">Sprints de actualización (cloud, testing, observabilidad, seguridad básica).</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex h-9 w-9 items-center justify-center rounded-full bg-teal-500 font-bold text-neutral-900">3</span>
+              <div>
+                <h3 class="font-semibold">Match con empresas</h3>
+                <p class="text-neutral-300">Shortlist basado en skills &amp; valores. Prueba técnica conjunta y feedback estructurado.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex h-9 w-9 items-center justify-center rounded-full bg-teal-500 font-bold text-neutral-900">4</span>
+              <div>
+                <h3 class="font-semibold">Onboarding acompañado</h3>
+                <p class="text-neutral-300">Primeros 90 días con soporte técnico y soft skills para asegurar el encaje.</p>
+              </div>
+            </li>
+          </ol>
+          <a href="#contacto" class="mt-8 inline-flex items-center rounded-xl bg-teal-500 px-6 py-3 font-semibold text-neutral-900 hover:bg-teal-400">Hablemos</a>
+        </div>
+
+        <!-- Galería / imágenes que has proporcionado -->
+        <div class="grid grid-cols-2 gap-4">
+          <img class="rounded-2xl ring-1 ring-neutral-800 object-cover h-44 sm:h-56 w-full"
+               src="https://img.freepik.com/free-photo/team-coders-analyzing-code-wall-screen-tv-comparing-errors-using-digital-tablet-programer-working-with-neural-network-software-engineers-collaborating-coding-group-project_482257-44658.jpg?t=st=1762714577~exp=1762718177~hmac=9119bc0fc2b516b0b0a70cdda27fab243760b7442a9b7d16d490153301c7b3ce&w=2000"
+               alt="Equipo de desarrolladores colaborando" loading="lazy">
+          <img class="rounded-2xl ring-1 ring-neutral-800 object-cover h-44 sm:h-56 w-full"
+               src="https://img.freepik.com/free-photo/joyous-developer-showing-happiness-after-securing-company-servers_482257-121768.jpg?t=st=1762715162~exp=1762718762~hmac=fd93f8596e4db6ece5f152195f1f14cb3c1391096874b1c6f4a2cc26dbc7a461&w=2000"
+               alt="Desarrollador satisfecho celebrando éxito" loading="lazy">
+          <img class="rounded-2xl ring-1 ring-neutral-800 object-cover h-44 sm:h-56 w-full col-span-2"
+               src="https://img.freepik.com/free-photo/specialist-pc-desk-high-tech-establishment-overseeing-server-rows_482257-88124.jpg?t=st=1762714780~exp=1762718380~hmac=49ab9917bdfdd09102194365c16e603dc873e51b0b2f8c974192ba8214e51c7a&w=2000"
+               alt="Especialista frente a monitores y servidores" loading="lazy">
+          <!-- El enlace de Freepik con página de detalle no es una imagen directa, se omite para evitar roturas -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVIDENCIAS / TESTIMONIOS -->
+  <section id="evidencias" class="py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between gap-6">
+        <h2 class="text-3xl sm:text-4xl font-bold">Historias reales</h2>
+        <span class="text-sm text-neutral-400">Resultados medibles en 90 días</span>
+      </div>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <article class="rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800 p-6">
+          <p class="text-neutral-300">“Volví al desarrollo con 47 años. En 6 semanas estaba desplegando a AWS con pipelines y tests. Entré en un producto fin-tech como backend.”</p>
+          <p class="mt-4 text-sm text-neutral-400">— Ana, Backend re-entry</p>
+        </article>
+        <article class="rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800 p-6">
+          <p class="text-neutral-300">“Venía de .NET Framework on-prem. Migré a microservicios con contenedores y métricas. Match perfecto con una SaaS B2B.”</p>
+          <p class="mt-4 text-sm text-neutral-400">— Luis, Senior “legacy → cloud”</p>
+        </article>
+        <article class="rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800 p-6">
+          <p class="text-neutral-300">“Soy junior +45. Mi fuerte eran procesos. El mentoring técnico me dio confianza y conseguí mi primer contrato.”</p>
+          <p class="mt-4 text-sm text-neutral-400">— Marta, Junior +45</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA INTERMEDIA -->
+  <section class="py-16 bg-gradient-to-b from-neutral-900/50 to-neutral-900/20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold">¿Listo para descubrir talento que otros pasan por alto?</h2>
+      <a href="#contacto" class="mt-6 inline-flex items-center rounded-xl bg-teal-500 px-6 py-3 font-semibold text-neutral-900 hover:bg-teal-400">Quiero hablar con el equipo</a>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <section id="contacto" class="py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-bold">Contacto</h2>
+          <p class="mt-3 text-neutral-300 max-w-lg">
+            Rellena el formulario y te escribiremos en menos de 48h. También puedes escribir a
+            <a href="mailto:info@c0deresidency.com" class="underline decoration-teal-500/60 hover:text-teal-300">info@c0deresidency.com</a>.
+          </p>
+
+          <div class="mt-8 space-y-4 text-sm text-neutral-400">
+            <div class="flex items-center gap-3">
+              <span class="h-2 w-2 rounded-full bg-teal-400"></span>
+              <span>Privacidad: solo usaremos tus datos para contactar y evaluar tu caso. Nada de spam.</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="h-2 w-2 rounded-full bg-teal-400"></span>
+              <span>Empresas: podemos firmar NDA si lo necesitáis.</span>
+            </div>
+          </div>
+
+          <!-- Logo repetido a modo de sello -->
+          <img src="logo_c0de_dark.png" alt="c0de residency" class="mt-10 h-10 w-auto opacity-90" />
+        </div>
+
+        <form id="lead-form" class="rounded-2xl bg-neutral-900/60 ring-1 ring-neutral-800 p-6 space-y-5" novalidate>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="nombre" class="block text-sm font-medium">Nombre</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" required
+                     class="mt-2 w-full rounded-xl bg-neutral-950 ring-1 ring-neutral-800 px-3 py-2 placeholder-neutral-500 focus:ring-teal-500"
+                     placeholder="Tu nombre" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required
+                     class="mt-2 w-full rounded-xl bg-neutral-950 ring-1 ring-neutral-800 px-3 py-2 placeholder-neutral-500 focus:ring-teal-500"
+                     placeholder="tu@empresa.com" />
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="tipo" class="block text-sm font-medium">Soy</label>
+              <select id="tipo" name="tipo" class="mt-2 w-full rounded-xl bg-neutral-950 ring-1 ring-neutral-800 px-3 py-2 focus:ring-teal-500" required>
+                <option value="" selected disabled>Selecciona una opción</option>
+                <option value="empresa">Empresa</option>
+                <option value="candidato_reentry">Candidato · Re-entry</option>
+                <option value="candidato_legacy">Candidato · Cambio legacy→actual</option>
+                <option value="candidato_junior45">Candidato · Junior +45</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div>
+              <label for="telefono" class="block text-sm font-medium">Teléfono (opcional)</label>
+              <input id="telefono" name="telefono" type="tel" pattern="^[0-9+()\-\s]{7,}$"
+                     class="mt-2 w-full rounded-xl bg-neutral-950 ring-1 ring-neutral-800 px-3 py-2 placeholder-neutral-500 focus:ring-teal-500"
+                     placeholder="+34 600 123 456" />
+            </div>
+          </div>
+
+          <div>
+            <label for="mensaje" class="block text-sm font-medium">Cuéntanos tu caso</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required
+                      class="mt-2 w-full rounded-xl bg-neutral-950 ring-1 ring-neutral-800 px-3 py-2 placeholder-neutral-500 focus:ring-teal-500"
+                      placeholder="Edad, stack actual, experiencia previa, objetivos..."></textarea>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <input id="privacidad" type="checkbox" required class="mt-1 h-5 w-5 rounded border-neutral-700 bg-neutral-950 text-teal-500 focus:ring-teal-500" />
+            <label for="privacidad" class="text-sm text-neutral-300">
+              Acepto la política de privacidad y el tratamiento de mis datos para ser contactado.
+            </label>
+          </div>
+
+          <div id="form-feedback" class="hidden rounded-xl p-3 text-sm"></div>
+
+          <button type="submit" class="w-full inline-flex items-center justify-center rounded-xl bg-teal-500 px-6 py-3 font-semibold text-neutral-900 hover:bg-teal-400">
+            Enviar
+          </button>
+
+          <!-- Comentario: reemplaza ENDPOINT_URL cuando lo tengas -->
+          <!-- El formulario envía JSON vía fetch POST a ENDPOINT_URL -->
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20 bg-neutral-900/40">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold">Preguntas frecuentes</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-2">
+        <article class="rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800 p-6">
+          <h3 class="font-semibold">¿Hay coste para los candidatos?</h3>
+          <p class="mt-2 text-neutral-300">No. El coste lo asumen las empresas que contratan. Para los candidatos hay mentoring y evaluación sin cargo.</p>
+        </article>
+        <article class="rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800 p-6">
+          <h3 class="font-semibold">¿Trabajáis solo con un stack?</h3>
+          <p class="mt-2 text-neutral-300">Nos centramos en prácticas: testing, CI/CD, cloud, seguridad básica. El stack se adapta a cada empresa.</p>
+        </article>
+        <article class="rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800 p-6">
+          <h3 class="font-semibold">¿Cómo evitáis sesgos de edad?</h3>
+          <p class="mt-2 text-neutral-300">Evaluación ciega por habilidades, ejercicios prácticos y métricas objetivas. El CV llega después.</p>
+        </article>
+        <article class="rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800 p-6">
+          <h3 class="font-semibold">¿Tiempo típico hasta la incorporación?</h3>
+          <p class="mt-2 text-neutral-300">Entre 3 y 12 semanas, según el gap inicial y la ventana de contratación.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-neutral-800">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-neutral-400">© <span id="year"></span> c0de residency. Todos los derechos reservados.</p>
+        <p class="text-sm text-neutral-400">
+          Contacto: <a href="mailto:info@c0deresidency.com" class="underline decoration-teal-500/60 hover:text-teal-300">info@c0deresidency.com</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS: manejo del formulario -->
+  <script>
+    // Reemplaza esta URL cuando me pases el endpoint real (POST JSON)
+    const ENDPOINT_URL = 'REPLACE_WITH_ENDPOINT';
+
+    const form = document.getElementById('lead-form');
+    const feedback = document.getElementById('form-feedback');
+
+    function showFeedback(ok, message) {
+      feedback.classList.remove('hidden');
+      feedback.classList.toggle('bg-emerald-900/50', ok);
+      feedback.classList.toggle('text-emerald-200', ok);
+      feedback.classList.toggle('ring-emerald-700', ok);
+      feedback.classList.toggle('bg-red-900/40', !ok);
+      feedback.classList.toggle('text-red-200', !ok);
+      feedback.classList.toggle('ring-red-700', !ok);
+      feedback.classList.add('ring-1');
+      feedback.textContent = message;
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Validación sencilla
+      if (!form.checkValidity()) {
+        showFeedback(false, 'Revisa los campos: faltan datos o hay un formato inválido.');
+        return;
+      }
+
+      const payload = {
+        nombre: form.nombre.value.trim(),
+        email: form.email.value.trim(),
+        tipo: form.tipo.value,
+        telefono: form.telefono.value.trim(),
+        mensaje: form.mensaje.value.trim(),
+        privacidad: document.getElementById('privacidad').checked,
+        origen: 'c0de-residency-landing',
+        ts: new Date().toISOString()
+      };
+
+      try {
+        const res = await fetch(ENDPOINT_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        if (!res.ok) {
+          const txt = await res.text().catch(() => '');
+          throw new Error('HTTP ' + res.status + (txt ? ' · ' + txt : ''));
+        }
+
+        form.reset();
+        showFeedback(true, '¡Gracias! Hemos recibido tu solicitud. Te contactaremos en breve.');
+      } catch (err) {
+        console.error(err);
+        showFeedback(false, 'No se pudo enviar el formulario. Si persiste, escríbenos a info@c0deresidency.com');
+      }
+    });
+
+    // Año dinámico en el footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
