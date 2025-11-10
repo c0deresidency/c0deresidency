@@ -373,22 +373,15 @@
         return;
       }
 
-      const payload = {
-        nombre: form.nombre.value.trim(),
-        email: form.email.value.trim(),
-        tipo: form.tipo.value,
-        telefono: form.telefono.value.trim(),
-        mensaje: form.mensaje.value.trim(),
-        privacidad: document.getElementById('privacidad').checked,
-        origen: 'c0de-residency-landing',
-        ts: new Date().toISOString()
-      };
+      const formData = new FormData(form);
+      formData.append('origen', 'c0de-residency-landing');
+      formData.append('ts', new Date().toISOString());
+      formData.set('privacidad', document.getElementById('privacidad').checked ? 'sí' : 'no');
 
       try {
         const res = await fetch(ENDPOINT_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
+          body: formData
         });
 
         if (!res.ok) {
